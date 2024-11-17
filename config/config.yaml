@@ -1,0 +1,27 @@
+# Configuration parameters for Toast Exports Sanitizer
+
+# Environment-based replacements
+LOCATION_REPLACEMENT: "YourLocationReplacement"
+EMPLOYEE_MAPPING: '{"OriginalName": "ReplacementName"}'
+
+# Input and output directories
+input_directory: "input"
+output_directory: "output"
+
+# File names
+file_names:
+  - "AllItemsReport.csv"
+  - "CashEntries.csv"
+  - "CheckDetails.csv"
+  - "ItemSelectionDetails.csv"
+  - "KitchenTimings.csv"
+  - "ModifiersSelectionDetails.csv"
+  - "OrderDetails.csv"
+  - "PaymentDetails.csv"
+  - "TimeEntries.csv"
+
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
