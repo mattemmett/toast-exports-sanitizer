@@ -1,6 +1,5 @@
 import os
 import sys
-from dotenv import load_dotenv
 from data_processor import (
     sanitize_all_items_report,
     sanitize_cash_entries,
@@ -15,8 +14,9 @@ from data_processor import (
 
 def main(input_directory):
     date_dir_name = os.path.basename(os.path.normpath(input_directory))
-    root_directory = os.path.abspath(os.path.join(input_directory, "../../.."))
-    output_directory = os.path.join(root_directory, "SampleData", date_dir_name)
+    #root_directory = os.path.abspath(os.path.join(input_directory, "../../.."))
+    root_directory = os.path.abspath(os.path.join(input_directory, "../.."))
+    output_directory = os.path.join(root_directory, "output", date_dir_name)
     os.makedirs(output_directory, exist_ok=True)
 
     file_processors = [

@@ -3,6 +3,22 @@ import random
 import string
 import json
 import uuid
+import os
+from dotenv import load_dotenv
+
+
+# Get the root directory path
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Load the .env file from the root directory
+load_dotenv(os.path.join(root_dir, ".env"))
+
+# Environment-based replacements
+LOCATION_REPLACEMENT = os.getenv("LOCATION_REPLACEMENT")
+EMPLOYEE_MAPPING = json.loads(os.getenv("EMPLOYEE_MAPPING", "{}"))
+
+print(os.getenv("LOCATION_REPLACEMENT"))
+print(json.loads(os.getenv("EMPLOYEE_MAPPING", "{}")))
 
 def sanitize_all_items_report(file_path):
     data = pd.read_csv(file_path)
