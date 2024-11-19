@@ -38,7 +38,7 @@ Before using the project, ensure you have the following installed:
 
 ## Configuration
 
-The `config/config.yaml` file contains configuration parameters for the project. You can modify the parameters as needed.
+The `config/config.yaml` file contains configuration parameters for the project. This file is for future purposes. Currently, the project uses the `.env` file for configuration. You can modify the parameters in the `.env` file as needed.
 
 ## Running the Sanitizer
 

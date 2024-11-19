@@ -33,7 +33,7 @@ This project is a Python utility designed to sanitize sensitive information from
 
 To use the sanitization script, run the following command:
 ```sh
-python Tools/SanitizeData.py <input_directory>
+python src/main.py <input_directory>
 ```
 Replace `<input_directory>` with the path to the directory containing the Toast PoS export files you want to sanitize.
 

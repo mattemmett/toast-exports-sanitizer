@@ -1,4 +1,5 @@
 # Configuration parameters for Toast Exports Sanitizer
+# This file is for future purposes
 
 # Environment-based replacements
 LOCATION_REPLACEMENT: "YourLocationReplacement"
